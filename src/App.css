@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: rgb(97,97,97) ;
+}
+li{
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}
+.btns{
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323243;
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+  margin-left: 2rem;
+}
+input{
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 14rem;
+}
+.nav-icons{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+  color: #000;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  z-index: -2;
+}
+.card{
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+}
+.card-img{
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+.card-title{
+  margin-bottom: 1rem;
+} 
+.recommended-flex{
+  display: flex;
+  margin-left: 20rem;
+  font-family: sans-serif;
+}
+.recommended-title{
+  margin-left: 20rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.sidebar-title{
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.sidebar{
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  border-right: 2px solid #e5e5e5;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container{
+  margin-bottom: 4rem;
+}
+.sidebar-title{
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.sidebar-label-container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sidebar-label-container input{
+  position: absolute ;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.line{
+  margin-top: 3rem;
+  border-color: #f7f7f7;
+}
