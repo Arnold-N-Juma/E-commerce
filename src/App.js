@@ -30,16 +30,12 @@ export default function App() {
   };
   
 
-  const handleRecommendedClick = (category) => {
-    setSelectedCategory(category);
-  };
-
 const filteredData = data.filter((item) => {
-  const { category, color, company, newPrice, title } = item;
+  const { category, title } = item;
   const filterLowerCase = searchFilter.toLowerCase();
   const categoryLowerCase = category.toLowerCase();
  
-  const newPriceLowerCase = newPrice.toLowerCase();
+  
   const titleLowerCase = title.toLowerCase();
 
   return (
@@ -65,12 +61,7 @@ const filteredData = data.filter((item) => {
   function handleSort(criteria) {
     setSortingCriteria(criteria);
   }
-  const sortedData = data.slice().sort((a, b) => {
-    if (sortingCriteria) {
-      return a[sortingCriteria] - b[sortingCriteria];
-    }
-    return 0;
-  });
+  
   function handleUpdateOnSubmission(NewData){
     const serverOptions ={
       method:"POST",

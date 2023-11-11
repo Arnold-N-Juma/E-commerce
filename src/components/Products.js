@@ -8,7 +8,7 @@ export default function Products({ result, data, setData }) {
     
       setData(filteredData);
 
-      fetch(`http://localhost:8001/data/${id}`, {
+      fetch(`https://blog1-ioqo.onrender.com/data/${id}`, {
         method: 'DELETE',
       })
         .then((response) => {
