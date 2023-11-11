@@ -1,5 +1,6 @@
 import{FiHeart} from "react-icons/fi"
 import {AiOutlineUserAdd, AiOutlineShoppingCart} from 'react-icons/ai'
+import{Link} from "react-router-dom"
 
 export default function Nav({handleInputChange}) {
   return (
@@ -18,7 +19,8 @@ export default function Nav({handleInputChange}) {
         <a href="#">
             <AiOutlineUserAdd className="nav-icons"/>
         </a>
-      
+        <Link to="/newdata">New Data</Link>
+        <Outlet/>
     </div>
    </nav>
   )

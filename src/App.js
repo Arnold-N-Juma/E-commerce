@@ -15,7 +15,7 @@ export default function App() {
   const [selectedShoeType, setSelectedShoeType] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8001/data')
+    fetch('https://blog1-ioqo.onrender.com/data')
       .then((resp) => resp.json())
       .then((transc) => setData(transc));
   }, []);
@@ -79,7 +79,7 @@ const filteredData = data.filter((item) => {
       },
       body:JSON.stringify(NewData)
     }
-    fetch('http://localhost:8001/data',serverOptions)
+    fetch('https://blog1-ioqo.onrender.com/data',serverOptions)
     .then(r=>r.json())
     .then(newItem=> setData(data=>[...data,newItem]))
     .catch(err=>console.log(err))
