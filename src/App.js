@@ -11,7 +11,6 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [data, setData] = useState([]);
   const [searchFilter, setSearchFilter] = useState('');
-  const [sortingCriteria, setSortingCriteria] = useState(null);
   const [selectedShoeType, setSelectedShoeType] = useState('');
 
   useEffect(() => {
