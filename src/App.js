@@ -30,21 +30,20 @@ export default function App() {
   };
   
 
-const filteredData = data.filter((item) => {
-  const { category, title } = item;
-  const filterLowerCase = searchFilter.toLowerCase();
-  const categoryLowerCase = category.toLowerCase();
- 
+  const filteredData = data.filter((item) => {
+    const { category, title } = item || {};
+    const filterLowerCase = searchFilter.toLowerCase();
+    const categoryLowerCase = category?.toLowerCase() || '';
+    const titleLowerCase = title?.toLowerCase() || '';
   
-  const titleLowerCase = title.toLowerCase();
-
-  return (
-    (!searchFilter || 
-      titleLowerCase.includes(filterLowerCase) ||
-      categoryLowerCase.includes(filterLowerCase)) &&
-    (!selectedCategory || categoryLowerCase === selectedCategory)
-  );
-});
+    return (
+      (!searchFilter || 
+        titleLowerCase.includes(filterLowerCase) ||
+        categoryLowerCase.includes(filterLowerCase)) &&
+      (!selectedCategory || categoryLowerCase === selectedCategory)
+    );
+  });
+  
 
 
   const result = filteredData.map(({ img, title, star, reviews, newPrice, prevPrice }) => (
