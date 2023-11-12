@@ -23,7 +23,7 @@ export default function NewData({onSubmission}) {
         <input value={formData.company} name="company" type="text" placeholder="company"/>
         <input value={formData.color} name="color" className="color" type="text" placeholder="color"/>
         </div>
-        <button style={{textAlign:"center"}} className="btns">Add Shoe</button>
+        <button style={{textAlign:"center"}} className="btn">Add Shoe</button>
     </form>
  
   )

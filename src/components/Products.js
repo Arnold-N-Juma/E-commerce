@@ -32,7 +32,7 @@ export default function Products({ result, data, setData }) {
           <div key={item.id} className="card">
             <h3 className="card-title">{item.title}</h3>
                      {item}
-            <button onClick={() => handleDelete(item.id)}>Delete</button>
+            <button onClick={() => handleDelete(item.id)} className="btns">Delete</button>
           </div>
         ))}
       </section>
